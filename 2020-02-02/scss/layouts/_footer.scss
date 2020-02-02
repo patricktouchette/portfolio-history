@@ -1,0 +1,32 @@
+footer > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
+
+  .text {
+    color: $light;
+    margin-top: 0;
+    line-height: 1.5;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: $light;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    display: block;
+
+    .social {
+      justify-content: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

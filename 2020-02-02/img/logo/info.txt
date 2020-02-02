@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: clarikagrot-medium
+font link: https://www.fontspring.com/fonts/the-refinery/clarika/clarika-grotesque-medium
+font author: The Refinery
+font author site: https://www.refinerybrand.com/
+Slogan Font: WorkSans-Light.ttf
+
+icon designer: Yaroslav Samoilov
+icon designer link: /Yaosamo
+        
+{"bg":"transparent","icon-gradient-0":"#288B58","icon-gradient-1":"#1522F1","font":"#000000","slogan":"#141414"}
+      

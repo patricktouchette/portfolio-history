@@ -1,0 +1,12 @@
+$maxWidth: 1200px;
+$padding: 3rem;
+
+.container {
+  margin: 0 auto;
+  max-width: $maxWidth;
+  padding: $padding;
+
+  @media screen and (max-width: 400px) {
+    padding: 3rem 2rem;
+  }
+}

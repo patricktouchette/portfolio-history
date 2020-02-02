@@ -1,0 +1,31 @@
+.blurb {
+  background: $dark;
+  color: white;
+  text-align: center;
+
+  .container {
+    max-width: 700px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  h3 {
+    margin-top: 0;
+    line-height: 1.75;
+  }
+
+  .btn {
+    margin-top: 1rem;
+  }
+
+  .accent {
+    color: $accent;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 600px) {
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+}

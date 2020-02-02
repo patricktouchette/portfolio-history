@@ -1,0 +1,48 @@
+header {
+  position: relative;
+  color: $dark;
+
+  .accent {
+    color: $accent;
+    font-weight: 600;
+  }
+}
+
+.header-bg,
+.header-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url('./../../img/topography.svg'), $neutral;
+  opacity: 0.05;
+  z-index: -2;
+}
+
+.header-overlay {
+  z-index: -1;
+  background: linear-gradient(to bottom, transparent, white);
+  opacity: 1;
+}
+
+.header-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  p {
+    font-size: 1.35rem;
+    max-width: 500px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: block;
+
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+}

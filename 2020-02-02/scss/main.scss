@@ -1,0 +1,37 @@
+@import './global/colors';
+@import './global/variables';
+@import './global/typography';
+
+@import './layouts/container';
+@import './layouts/header';
+@import './layouts/blurb';
+@import './layouts/features';
+@import './layouts/portfolio';
+@import './layouts/about';
+@import './layouts/footer';
+
+@import './components/buttons';
+@import './components/header-nav';
+@import './components/social';
+@import './components/contactForm';
+@import './components/pricing';
+@import './components/icons';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $dark;
+}
+
+.contact {
+  background: $secondary;
+}
+
+footer {
+  background: $dark;
+  color: white;
+}

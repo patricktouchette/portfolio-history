@@ -1,0 +1,38 @@
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: $fontFamily;
+  transition: all 0.3s ease-in-out;
+  box-shadow: $boxShadow;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background: $primary;
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid $primary;
+  color: $primary;
+  box-shadow: none;
+}
+
+.btn-white {
+  border: 1px solid white;
+  color: white;
+  box-shadow: none;
+}
+
+.btn-accent {
+  color: $accent;
+  border: 1px solid $accent;
+}

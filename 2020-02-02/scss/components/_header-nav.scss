@@ -1,0 +1,49 @@
+.header-nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  li {
+    margin-right: 2rem;
+  }
+
+  a:not(.btn) {
+    text-decoration: none;
+    color: $dark;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  // button underline
+  a:not(.btn):not(.logo):hover {
+    border-bottom: 2px solid $primary;
+  }
+
+  .logo {
+    justify-self: flex-start;
+    margin-right: auto;
+    width: 50px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    a:not(.btn) {
+      display: none;
+    }
+
+    li {
+      margin-right: 0;
+    }
+  }
+}

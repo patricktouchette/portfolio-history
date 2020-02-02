@@ -1,0 +1,116 @@
+/** {
+	border:1px solid red !important;
+}*/
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+* {
+	font-family: 'Indie Flower', cursive;
+}
+
+@media only screen and (max-width: 500px) {
+	p{
+		background-color: blue;
+	}
+}
+
+
+@media only screen and (max-width: 500px) {
+	p{
+		display: none;
+	}
+}
+
+h1 {
+	color:Black;
+}
+
+.row {
+	width: 100%;
+	display: flex; flex-wrap:wrap;
+	overflow: auto;
+
+}
+.col-0 {
+	width: 4.16%;
+}
+.col-1 {
+	width: 8.33%;
+}
+.col-2 {
+	width: 16.66%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.33%;
+}
+.col-5 {
+	width: 41.66%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.66%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.33%;
+}
+.col-11 {
+	width: 91.66%;
+}
+.col-12 {
+	position: relative;
+	width: 100%;
+}
+
+.responsive_image {
+	position: relative;
+    max-width: 100%;
+    height: auto;
+}
+.responsive_image_max_width {
+	position: relative;
+	width: 100%;
+    max-width: 250px;
+    height: auto;
+	padding: 25px;
+}
+.responsive_image_max_height {
+	position: relative;
+	max-height: 75px;
+    width: auto;
+	padding: 8px;
+    /*height: auto;*/
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+/* Top right text */
+.top-left {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}

@@ -1,0 +1,454 @@
+/* ============== */
+/* CSS Variables */
+/* ============== */
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --darker: #262626;
+    --light: #f2f2f2;
+    --lighter: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104, 0.8);
+}
+
+
+/* ============== */
+/* GENERAL STYLING */
+/* ============== */
+html {
+    /* box-sizing: border-box; */
+    font-family: 'Roboto', sans-serif;
+    color: var(--darker);
+}
+
+body {
+    background: var(--lighter);
+    padding: 0;
+    margin: 0;
+    line-height: 1.4rem;
+
+}
+
+
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    background-color: var(--dark);
+    margin: auto;
+}
+
+.grid-container div {
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* ============== */
+/* NAVIGATION */
+/* ============== */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    line-height: 2rem;
+}
+
+
+.main-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--lighter);
+    padding: 0 10px;
+}
+
+.main-nav a:hover {
+    background: var(--lighter);
+    color: var(--darker);
+}
+
+/* ============== */
+/* Showcase */
+/* ============== */
+.showcase {
+    min-height: 600px;
+    background: url(img/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+#myname h1 {
+    font-size: 2rem;
+}
+
+#myname h3 {
+    font-size: 1.25rem;
+}
+
+#myname {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 0;
+    position: absolute;
+    top: 4px;
+    right: 16px;
+    text-align: right;
+}
+
+#about {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px rgba(255,255,255,0.5);
+    text-align: justify;
+    background-color: rgba(255,255,255,0.01);
+    width: 30%;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#about hr {
+    border: 0;
+    height: 1.5px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    width: 50%;
+    margin-left: 25px;;
+}
+
+/* ============== */
+/* SKILLS SECTION */
+/* ============== */
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.skills ul {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    /* border: 1px solid var(--darker); */
+    background-color: var(--primary);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+
+}
+
+.skills ul li {
+    background: var(--darker);
+    color: var(--lighter);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.skills ul li a {
+    /* display: block; */
+    font-size: 0.8rem;
+    color: var(--lighter);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+
+}
+
+/* ============== */
+/* TITLES SECTION */
+/* ============== */
+.section-title {
+    background-color: var(--lighter);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+
+#work-title {
+    background-color: var(--dark);
+    color: var(--lighter);
+}
+
+/* ============== */
+/* WORK SECTION */
+/* ============== */
+.grid-container .work {
+    background-color: var(--dark);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: center;
+    padding: 20px;
+}
+
+.work .project {
+    background-color: var(--primary);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.work .project-links {
+    background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 10px 0;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    text-align: left;
+
+
+}
+
+.work .project-links a {
+    background-color : #1a8cff;
+    color: var(--lighter);
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.grid-container .tags {
+    background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    padding-top: 10px;
+
+}
+.grid-container .tag {
+    background-color: var(--darker);
+    color: var(--light);
+    padding: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position:top;
+}
+
+/* ============== */
+/* EDUCATION */
+/* ============== */
+
+#education-title {
+    background-color: var(--primary)
+}
+
+.grid-container .education {
+    background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+}
+
+.education .edu-container {
+    background-color: var(--lighter);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.education img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+    object-position:top;
+}
+
+#udemy-logo { grid-area: udemy;}
+#youtube-logo { grid-area: youtube;}
+#stack-logo { grid-area: stack;}
+#self-taught-images h3 { grid-area: h3;}
+#self-taught-images p { grid-area: p;}
+
+#self-taught-images {
+    display: grid;
+    grid-template-areas:
+        'udemy youtube'
+        'udemy stack'
+        'h3 h3'
+        'p p';
+    /* margin: 0; */
+}
+
+#self-taught-images h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+#udemy-logo {
+    width: 80%;
+}
+
+
+/* ============== */
+/* CERTIFICATES */
+/* ============== */
+#certificate-title {
+    background-color: var(--primary)
+}
+
+.grid-container .certificates {
+    background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    margin: 0;
+}
+
+.certificates .cert-container {
+    background-color: var(--lighter);
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+.certificates .cert-container .tags {
+    background-color: var(--lighter);
+    margin-bottom: 10px;
+}
+
+.certificates .cert-container a {
+    background-color : #1a8cff;
+    color: var(--lighter);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0;
+    margin-top: auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ============== */
+/* Footer */
+/* ============== */
+.grid-container .footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+
+}
+
+.grid-container .icons {
+    background-color: var(--dark);
+    /* width: 30rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer i {
+    color: var(--light);
+    font-size: 5rem;
+    margin: 2.5rem;
+}
+
+#cv-button {
+    background-color : #1a8cff;
+    color: var(--lighter);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+#copyright {
+    font-size: 0.7rem;
+}
+
+
+/* ============== */
+/* Media Queries */
+/* ============== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cert-container, .edu-container, .project {
+        width: 100%;
+    }
+    .grid-container .icons {
+        flex-direction: column;
+    }
+    .main-nav a:nth-child(-n+4) {display: none;}
+    #myname h1 {
+        font-size: 1.75rem;
+    }
+
+    #myname h3 {
+        font-size: 1.35rem;
+    }
+
+    #about {
+        font-size: 1.25rem;
+        width: 70%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .cert-container, .edu-container, .project {
+        width: 38%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .cert-container, .edu-container, .project {
+        width: 25%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Ultrawide */
+@media only screen and (min-width: 1600px){
+    .grid-container {
+        border: 5px solid var(--dark);
+        max-width: 1600px;
+    }
+    .cert-container, .edu-container, .project {
+        width: 18%;
+    }
+}
